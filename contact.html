@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Mano Bharathi</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Mano Bharathi</a>
+      <nav class="nav" id="primary-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <h1>Let's work together</h1>
+          <p class="lead">Have a project or opportunity? I’m available for freelance and full-time work.</p>
+
+          <div class="contact-details">
+            <p><strong>Email:</strong> <a href="mailto:example@gmail.com">manobharathi.146cse@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+911234567890">+91 9087653423</a></p>
+            <p><strong>Location:</strong> Coimbatore, India</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Manobharathi-M" target="_blank">github.com/Manobharathi-M</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mano-bharathi-m-cse-bab106294" target="_blank">linkedin.com/in/Manobharathi</a></p>
+          </div>
+        </div>
+
+      <form class="contact-form" id="contactForm">
+  <label>
+    Your name
+    <input type="text" name="name" id="name" required />
+  </label>
+
+  <label>
+    Your email
+    <input type="email" name="email" id="email" required />
+  </label>
+
+  <label>
+    Message
+    <textarea name="message" id="message" rows="6" required></textarea>
+  </label>
+
+  <div class="form-actions">
+    <button class="btn" type="submit">Send message</button>
+  </div>
+
+  <p id="successMsg" style="color:green; margin-top:10px; display:none;">
+    ✔ Your message has been sent!
+  </p>
+</form>
+
+<!-- Show saved messages -->
+<div class="sent-messages" id="sentMessages"></div>
+
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year-contact"></span> Mano Bharathi. Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

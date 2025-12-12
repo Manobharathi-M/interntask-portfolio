@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Mano Bharathi</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">YourName</a>
+      <nav class="nav" id="primary-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="projects-hero">
+      <div class="container">
+        <h1>Projects</h1>
+        <p class="lead">My Frontend projects.</p>
+
+        <div class="projects-grid">
+          <!-- Project Card 1 -->
+          <article class="project-card" data-project="1">
+            <img src="assets\outputp1.png" alt="Project 1 screenshot" />
+            <div class="project-body">
+              <h3>Senthuron Cafe Webpage</h3>
+              <p class="muted">HTML · CSS · JavaScript</p>
+              <p class="short">Designed a modern, visually appealing webpage for Senthuron Cafe to showcase branding, menu, and contact info.</p>
+              <div class="card-actions">
+                <button class="btn btn-small view-details" data-project="1">View details</button>
+                <a class="link" href="https://manobharathi-m.github.io/Senthuron-cafe/" target="_blank">Live demo</a>
+                <a class="link" href="https://github.com/Manobharathi-M/Senthuron-cafe" target="_blank">Git</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <article class="project-card" data-project="2">
+            <img src="assets\image.png" alt="Project 2 screenshot" />
+            <div class="project-body">
+              <h3>Environment friendly goods</h3>
+              <p class="muted">HTML · CSS · JavaScript</p>
+              <p class="short">Created a conversion-focused landing page for a small online retailer promoting eco-friendly products.</p>
+              <div class="card-actions">
+                <button class="btn btn-small view-details" data-project="2">View details</button>
+                <a class="link" href="https://manobharathi-m.github.io/interntask1/" target="_blank">Live demo</a>
+                <a class="link" href="https://github.com/Manobharathi-M/interntask1.git" target="_blank">Git</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3 -->
+          <article class="project-card" data-project="3">
+            <img src="assets\output3.png" alt="Project 3 screenshot" />
+            <div class="project-body">
+              <h3>Weather Website</h3>
+              <p class="muted">HTML · CSS · JavaScript</p>
+              <p class="short">Built a user-friendly weather website that provides real-time weather updates for any city.</p>
+              <div class="card-actions">
+                <button class="btn btn-small view-details" data-project="3">View details</button>
+                <a class="link" href="https://openweathermap.org/" target="_blank">Live demo</a>
+                <a class="link" href="https://github.com/topics/weather-website" target="_blank">Git</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal (hidden by default) -->
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+      <div id="modal-body"><!-- Filled by JS --></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year-projects"></span> Mano Bharathi</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
